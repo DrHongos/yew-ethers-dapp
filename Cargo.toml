@@ -1,0 +1,17 @@
+[package]
+name = "yew-ethers-wasm"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+yew = "0.19.3"
+ethers = {version= "0.17.0", features = ["abigen", "legacy", "ws", "openssl"]}
+wasm-bindgen = { version = "0.2", features = ["serde-serialize"] }
+wasm-bindgen-futures = "0.4"
+js-sys = "0.3.59"
+log = "0.4.6"
+wasm-logger = "0.2"
+serde = { version = "1.0.141", features = ["derive"] }
+web-sys = "0.3.56"
